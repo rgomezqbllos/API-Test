@@ -45,7 +45,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&qualificationCodes=string&staffCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&qualificationCodes=string&staffCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -82,12 +82,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 												},
 												{
@@ -120,7 +120,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -147,12 +147,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -196,7 +196,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -223,12 +223,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -268,7 +268,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -295,12 +295,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -335,7 +335,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -362,12 +362,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -402,7 +402,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -429,12 +429,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -469,7 +469,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/qualification?qualificationCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -496,12 +496,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter qualifications whose assignment begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter qualifications whose assignment ends on or before this date."
 														},
 														{
@@ -550,7 +550,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -603,12 +603,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 														},
 														{
@@ -641,7 +641,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -674,12 +674,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -723,7 +723,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -756,12 +756,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -801,7 +801,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -834,12 +834,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -874,7 +874,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -907,12 +907,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -947,7 +947,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -980,12 +980,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -1020,7 +1020,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1053,12 +1053,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -1093,7 +1093,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/bookOnBookOff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1126,12 +1126,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for bookOn bookOff that end on or before this date."
 																},
 																{
@@ -1177,7 +1177,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -1230,12 +1230,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -1268,7 +1268,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1301,12 +1301,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1350,7 +1350,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1383,12 +1383,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1428,7 +1428,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1461,12 +1461,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1501,7 +1501,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1534,12 +1534,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1574,7 +1574,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1607,12 +1607,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1647,7 +1647,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1680,12 +1680,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -1720,7 +1720,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/detail?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -1753,12 +1753,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -3034,7 +3034,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -3048,12 +3048,12 @@
 															"query": [
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date of the inactivity to delete"
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "End date of the inactivity to delete"
 																}
 															],
@@ -3078,7 +3078,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -3092,12 +3092,12 @@
 																	"query": [
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the inactivity to delete"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the inactivity to delete"
 																		}
 																	],
@@ -3131,7 +3131,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -3145,12 +3145,12 @@
 																	"query": [
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the inactivity to delete"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the inactivity to delete"
 																		}
 																	],
@@ -3179,7 +3179,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -3193,12 +3193,12 @@
 																	"query": [
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the inactivity to delete"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the inactivity to delete"
 																		}
 																	],
@@ -3222,7 +3222,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -3236,12 +3236,12 @@
 																	"query": [
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the inactivity to delete"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the inactivity to delete"
 																		}
 																	],
@@ -3265,7 +3265,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/inactivity?startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -3279,12 +3279,12 @@
 																	"query": [
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the inactivity to delete"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the inactivity to delete"
 																		}
 																	],
@@ -3954,7 +3954,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -3978,12 +3978,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date of the staff property value"
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "End date of the staff property value"
 																}
 															],
@@ -4008,7 +4008,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -4032,12 +4032,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the staff property value"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the staff property value"
 																		}
 																	],
@@ -4071,7 +4071,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -4095,12 +4095,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the staff property value"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the staff property value"
 																		}
 																	],
@@ -4129,7 +4129,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -4153,12 +4153,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the staff property value"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the staff property value"
 																		}
 																	],
@@ -4182,7 +4182,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -4206,12 +4206,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the staff property value"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the staff property value"
 																		}
 																	],
@@ -4235,7 +4235,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/customProperty?customPropertyName=string&value=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -4259,12 +4259,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the staff property value"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "End date of the staff property value"
 																		}
 																	],
@@ -4977,7 +4977,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+															"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5006,12 +5006,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date of the qualification validity period to be deleted"
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "Optional end date of the qualification validity period to be deleted"
 																}
 															],
@@ -5036,7 +5036,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -5065,12 +5065,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the qualification validity period to be deleted"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "Optional end date of the qualification validity period to be deleted"
 																		}
 																	],
@@ -5104,7 +5104,7 @@
 																	}
 																],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -5133,12 +5133,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the qualification validity period to be deleted"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "Optional end date of the qualification validity period to be deleted"
 																		}
 																	],
@@ -5167,7 +5167,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -5196,12 +5196,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the qualification validity period to be deleted"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "Optional end date of the qualification validity period to be deleted"
 																		}
 																	],
@@ -5225,7 +5225,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -5254,12 +5254,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the qualification validity period to be deleted"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "Optional end date of the qualification validity period to be deleted"
 																		}
 																	],
@@ -5283,7 +5283,7 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate=1974-09-04&endDate=1974-09-04",
+																	"raw": "{{baseUrl}}/ext/v1/staff/:staffCode/operationalGrouping?qualificationType=DEPOT&relationType=TRANSFER&externalCode=string&startDate={{startDate}}&endDate={{endDate}}",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
@@ -5312,12 +5312,12 @@
 																		},
 																		{
 																			"key": "startDate",
-																			"value": "1974-09-04",
+																			"value": "{{startDate}}",
 																			"description": "(Required) Start date of the qualification validity period to be deleted"
 																		},
 																		{
 																			"key": "endDate",
-																			"value": "1974-09-04",
+																			"value": "{{endDate}}",
 																			"description": "Optional end date of the qualification validity period to be deleted"
 																		}
 																	],
@@ -5360,7 +5360,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -5383,12 +5383,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters inactivity periods which start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters inactivity periods which end date is on or before this date."
 														},
 														{
@@ -5421,7 +5421,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5439,12 +5439,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5488,7 +5488,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5506,12 +5506,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5551,7 +5551,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5569,12 +5569,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5609,7 +5609,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5627,12 +5627,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5667,7 +5667,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5685,12 +5685,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5725,7 +5725,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5743,12 +5743,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5783,7 +5783,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/inactivity?staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -5801,12 +5801,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters inactivity periods which start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters inactivity periods which end date is on or before this date."
 																},
 																{
@@ -5852,7 +5852,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&assignmentType=string&depotCodes=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+													"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&assignmentType=string&depotCodes=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -5920,12 +5920,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "2025-01-01",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters for assignments that start on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "2025-12-31",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters for assignments that end on or before this date."
 														},
 														{
@@ -5958,7 +5958,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6001,12 +6001,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6050,7 +6050,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6093,12 +6093,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6138,7 +6138,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6181,12 +6181,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6221,7 +6221,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6264,12 +6264,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6304,7 +6304,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6347,12 +6347,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6387,7 +6387,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6430,12 +6430,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6470,7 +6470,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6513,12 +6513,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6557,7 +6557,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&assignmentType=string&depotCodes=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/assignment?assignmentType=string&assignmentType=string&depotCodes=string&depotCodes=string&assignmentScenarioCode=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6625,12 +6625,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -6674,7 +6674,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -6727,12 +6727,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -6765,7 +6765,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6798,12 +6798,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -6847,7 +6847,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6880,12 +6880,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -6925,7 +6925,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -6958,12 +6958,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -6998,7 +6998,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -7031,12 +7031,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -7071,7 +7071,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -7104,12 +7104,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -7144,7 +7144,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -7177,12 +7177,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -7217,7 +7217,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/staff/customProperty?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -7250,12 +7250,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for employees whose contract start date is on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for employees whose contract end date is on or before this date."
 																},
 																{
@@ -7598,7 +7598,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&staffCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -7650,12 +7650,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "Filters for employees whose contract start date is on or after this date."
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "Filters for employees whose contract end date is on or before this date."
 												},
 												{
@@ -7688,7 +7688,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -7720,12 +7720,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -7769,7 +7769,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -7801,12 +7801,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -7846,7 +7846,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -7878,12 +7878,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -7918,7 +7918,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -7950,12 +7950,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -7990,7 +7990,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -8022,12 +8022,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -8062,7 +8062,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -8094,12 +8094,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -8134,7 +8134,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/staff?depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&staffCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -8166,12 +8166,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "Filters for employees whose contract start date is on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "Filters for employees whose contract end date is on or before this date."
 														},
 														{
@@ -8855,7 +8855,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -8877,12 +8877,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Start date of the period to get the info."
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "(Required) End date of the period to get the info."
 												},
 												{
@@ -8915,7 +8915,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -8932,12 +8932,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -8981,7 +8981,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -8998,12 +8998,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9043,7 +9043,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -9060,12 +9060,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9100,7 +9100,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -9117,12 +9117,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9157,7 +9157,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -9174,12 +9174,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9214,7 +9214,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -9231,12 +9231,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9271,7 +9271,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standBy?standByCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -9288,12 +9288,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -9989,7 +9989,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/absence?type=string&type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/absence?type=string&type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -10011,12 +10011,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Start date of the period to get the absences."
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "(Required) End date of the period to get the absences."
 												},
 												{
@@ -10050,7 +10050,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10067,12 +10067,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10116,7 +10116,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10133,12 +10133,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10178,7 +10178,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10195,12 +10195,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10235,7 +10235,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10252,12 +10252,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10292,7 +10292,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10309,12 +10309,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10349,7 +10349,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10366,12 +10366,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -10406,7 +10406,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/absence?type=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -10423,12 +10423,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the absences."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the absences."
 														},
 														{
@@ -11113,7 +11113,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -11125,7 +11125,7 @@
 											"query": [
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												},
 												{
@@ -11159,7 +11159,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11171,7 +11171,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11215,7 +11215,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11227,7 +11227,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11267,7 +11267,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11279,7 +11279,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11314,7 +11314,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11326,7 +11326,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11361,7 +11361,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11373,7 +11373,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11408,7 +11408,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11420,7 +11420,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -11455,7 +11455,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/place?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/place?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -11467,7 +11467,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -12152,7 +12152,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+											"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -12184,7 +12184,7 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												}
 											]
@@ -12208,7 +12208,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12235,7 +12235,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12269,7 +12269,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12296,7 +12296,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12326,7 +12326,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12353,7 +12353,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12378,7 +12378,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12405,7 +12405,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12430,7 +12430,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12457,7 +12457,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12482,7 +12482,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12509,7 +12509,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12534,7 +12534,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/route?routeCodes=string&limit=7824&offset=7824&startDate={{startDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12561,7 +12561,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -12911,7 +12911,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&originPlaceCode=string&destinationPlaceCode=string&destinationPlaceCode=string",
+											"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&originPlaceCode=string&destinationPlaceCode=string&destinationPlaceCode=string",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -12933,7 +12933,7 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												},
 												{
@@ -12976,7 +12976,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -12998,7 +12998,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13042,7 +13042,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13064,7 +13064,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13104,7 +13104,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13126,7 +13126,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13161,7 +13161,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13183,7 +13183,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13218,7 +13218,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13240,7 +13240,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13275,7 +13275,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13297,7 +13297,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -13332,7 +13332,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate=1974-09-04&originPlaceCode=string&destinationPlaceCode=string",
+													"raw": "{{baseUrl}}/ext/v1/section?limit=7824&offset=7824&startDate={{startDate}}&originPlaceCode=string&destinationPlaceCode=string",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -13354,7 +13354,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -14501,7 +14501,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&taskCodes=string&depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&taskCodes=string&depotCodes=string&depotCodes=string&businessUnitCodes=string&businessUnitCodes=string&workingGroupCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -14553,12 +14553,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Start date of the period to get the info."
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "(Required) End date of the period to get the info."
 												},
 												{
@@ -14591,7 +14591,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14623,12 +14623,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -14672,7 +14672,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14704,12 +14704,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -14749,7 +14749,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14781,12 +14781,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -14821,7 +14821,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14853,12 +14853,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -14893,7 +14893,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14925,12 +14925,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -14965,7 +14965,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -14997,12 +14997,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -15037,7 +15037,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/task?taskCodes=string&depotCodes=string&businessUnitCodes=string&workingGroupCodes=string&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -15069,12 +15069,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date of the period to get the info."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date of the period to get the info."
 														},
 														{
@@ -16599,7 +16599,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -16655,7 +16655,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16713,7 +16713,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16770,7 +16770,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16828,7 +16828,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16881,7 +16881,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16934,7 +16934,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -16987,7 +16987,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -17040,7 +17040,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -17093,7 +17093,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -17146,7 +17146,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																},
 																{
@@ -17724,7 +17724,7 @@
 												},
 												{
 													"key": "startDate",
-													"value": "string",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												},
 												{
@@ -17779,7 +17779,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -17836,7 +17836,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -17892,7 +17892,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -17949,7 +17949,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18001,7 +18001,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18053,7 +18053,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18105,7 +18105,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18157,7 +18157,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18209,7 +18209,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18261,7 +18261,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -18328,7 +18328,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -18374,7 +18374,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18427,7 +18427,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18479,7 +18479,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18532,7 +18532,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18580,7 +18580,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18628,7 +18628,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18676,7 +18676,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18724,7 +18724,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18772,7 +18772,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -18820,7 +18820,7 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "string",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Only resources from this date onwards will be included in the response."
 																}
 															]
@@ -22243,7 +22243,7 @@
 												},
 												{
 													"key": "startDate",
-													"value": "string",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												}
 											]
@@ -22288,7 +22288,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22340,7 +22340,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22391,7 +22391,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22443,7 +22443,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22490,7 +22490,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22537,7 +22537,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22584,7 +22584,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22631,7 +22631,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22678,7 +22678,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22725,7 +22725,7 @@
 														},
 														{
 															"key": "startDate",
-															"value": "string",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														}
 													]
@@ -22764,7 +22764,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&businessUnitCodes=string&staffCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&businessUnitCodes=string&staffCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -22802,12 +22802,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 														},
 														{
@@ -22841,7 +22841,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -22869,12 +22869,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -22918,7 +22918,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -22946,12 +22946,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -22991,7 +22991,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -23019,12 +23019,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -23059,7 +23059,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -23087,12 +23087,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -23127,7 +23127,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -23155,12 +23155,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -23195,7 +23195,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -23223,12 +23223,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -23263,7 +23263,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/businessUnit/members?businessUnitCodes=string&staffCodes=string&relationType=TRANSFER&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -23291,12 +23291,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a business unit begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a business unit ends on or before this date."
 																},
 																{
@@ -24029,7 +24029,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&staffCodes=string&workingGroupCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&staffCodes=string&workingGroupCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -24067,12 +24067,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 														},
 														{
@@ -24105,7 +24105,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24133,12 +24133,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24182,7 +24182,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24210,12 +24210,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24255,7 +24255,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24283,12 +24283,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24323,7 +24323,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24351,12 +24351,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24391,7 +24391,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24419,12 +24419,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24459,7 +24459,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24487,12 +24487,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -24527,7 +24527,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/workingGroup/members?staffCodes=string&workingGroupCodes=string&relationType=ANY&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -24555,12 +24555,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Start date (inclusive) to filter staff whose assignment to a working group begins on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) End date (inclusive) to filter staff whose assignment to a working group ends on or before this date."
 																},
 																{
@@ -25613,7 +25613,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&depotCodes=string&staffCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&depotCodes=string&staffCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -25651,12 +25651,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 														},
 														{
@@ -25689,7 +25689,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -25717,12 +25717,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -25766,7 +25766,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -25794,12 +25794,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -25839,7 +25839,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -25867,12 +25867,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -25907,7 +25907,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -25935,12 +25935,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -25975,7 +25975,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -26003,12 +26003,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -26043,7 +26043,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -26071,12 +26071,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -26111,7 +26111,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate=1974-09-04&endDate=1974-09-04&limit=20&offset=0",
+															"raw": "{{baseUrl}}/ext/v1/depot/members?depotCodes=string&staffCodes=string&relationType=LINK&startDate={{startDate}}&endDate={{endDate}}&limit=20&offset=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -26139,12 +26139,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity begins."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Date from which the relation between the depot and the associated resource or entity ends."
 																},
 																{
@@ -31250,7 +31250,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+											"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -31262,7 +31262,7 @@
 											"query": [
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Only resources from this date onwards will be included in the response."
 												},
 												{
@@ -31296,7 +31296,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31308,7 +31308,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31352,7 +31352,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31364,7 +31364,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31404,7 +31404,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31416,7 +31416,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31451,7 +31451,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31463,7 +31463,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31498,7 +31498,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31510,7 +31510,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31545,7 +31545,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31557,7 +31557,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -31592,7 +31592,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate=1974-09-04&limit=20&offset=0",
+													"raw": "{{baseUrl}}/ext/v1/standardSeatMap?startDate={{startDate}}&limit=20&offset=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -31604,7 +31604,7 @@
 													"query": [
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Only resources from this date onwards will be included in the response."
 														},
 														{
@@ -33502,7 +33502,7 @@
 											}
 										],
 										"url": {
-											"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+											"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 											"host": [
 												"{{baseUrl}}"
 											],
@@ -33524,12 +33524,12 @@
 												},
 												{
 													"key": "startDate",
-													"value": "1974-09-04",
+													"value": "{{startDate}}",
 													"description": "(Required) Start date where scenario is active"
 												},
 												{
 													"key": "endDate",
-													"value": "1974-09-04",
+													"value": "{{endDate}}",
 													"description": "(Required) End date where scenario is active (inclusive)"
 												}
 											]
@@ -33552,7 +33552,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33574,12 +33574,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33613,7 +33613,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33635,12 +33635,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33670,7 +33670,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33692,12 +33692,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33722,7 +33722,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33744,12 +33744,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33774,7 +33774,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33796,12 +33796,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33826,7 +33826,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate=1974-09-04&endDate=1974-09-04",
+													"raw": "{{baseUrl}}/ext/v1/schedulingScenarios?limit=20&offset=0&startDate={{startDate}}&endDate={{endDate}}",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33848,12 +33848,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Start date where scenario is active"
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) End date where scenario is active (inclusive)"
 														}
 													]
@@ -33892,7 +33892,7 @@
 													}
 												],
 												"url": {
-													"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+													"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 													"host": [
 														"{{baseUrl}}"
 													],
@@ -33920,12 +33920,12 @@
 														},
 														{
 															"key": "startDate",
-															"value": "1974-09-04",
+															"value": "{{startDate}}",
 															"description": "(Required) Filters for assignments that start on or after this date."
 														},
 														{
 															"key": "endDate",
-															"value": "1974-09-04",
+															"value": "{{endDate}}",
 															"description": "(Required) Filters for assignments that end on or before this date."
 														},
 														{
@@ -33959,7 +33959,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -33982,12 +33982,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34031,7 +34031,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34054,12 +34054,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34099,7 +34099,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34122,12 +34122,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34162,7 +34162,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34185,12 +34185,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34225,7 +34225,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34248,12 +34248,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34288,7 +34288,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34311,12 +34311,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
@@ -34351,7 +34351,7 @@
 															}
 														],
 														"url": {
-															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate=1974-09-04&endDate=1974-09-04&pageSize=20&page=0",
+															"raw": "{{baseUrl}}/ext/v1/vehicle/assignment?depotCodes=string&assignmentScenarioCode=string&startDate={{startDate}}&endDate={{endDate}}&pageSize=20&page=0",
 															"host": [
 																"{{baseUrl}}"
 															],
@@ -34374,12 +34374,12 @@
 																},
 																{
 																	"key": "startDate",
-																	"value": "1974-09-04",
+																	"value": "{{startDate}}",
 																	"description": "(Required) Filters for assignments that start on or after this date."
 																},
 																{
 																	"key": "endDate",
-																	"value": "1974-09-04",
+																	"value": "{{endDate}}",
 																	"description": "(Required) Filters for assignments that end on or before this date."
 																},
 																{
