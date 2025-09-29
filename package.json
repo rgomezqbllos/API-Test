@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "test:report": "newman run collections/Integration-consumer.postman_collection.json -e envs/Dev.postman_environment.json --iteration-data data.json --reporters cli,htmlextra,json --delay-request 50"
+    "test:report": "npm run normalize:collection && npm run test:newman",
+    "normalize:collection": "node scripts/normalize-collection.cjs",
+    "test:newman": "newman run collections/Integration-consumer.postman_collection.normalized.json -e envs/Dev.postman_environment.json --iteration-data data.json --reporters cli,htmlextra,json --delay-request 50"
   },
   "keywords": [],
   "author": "",
@@ -20,3 +22,4 @@
     "newman-reporter-htmlextra": "^1.23.1"
   }
 }
+

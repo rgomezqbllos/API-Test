@@ -12,9 +12,12 @@ call :run_step "Ejecutando script de descarga"
 node index.js || goto :error
 call :run_step "Descarga completada"
 
+call :run_step "Normalizando colección"
+call npm run normalize:collection || goto :error
+
 call :run_step "Ejecutando pruebas de newman"
 if not exist reports mkdir reports
-call npm run test:report || goto :error
+call npm run test:newman || goto :error
 
 if exist newman (
   call "%~dp0move_reports.bat"

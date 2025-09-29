@@ -64,9 +64,12 @@ run_step "Ejecutando script de descarga"
 node index.js
 run_step "Descarga completada"
 
+run_step "Normalizando colección"
+npm run normalize:collection
+
 run_step "Ejecutando pruebas de newman"
 mkdir -p reports
-npm run test:report
+npm run test:newman
 
 if [[ -d newman ]]; then
   run_step "Contenido del directorio newman"
