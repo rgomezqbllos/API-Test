@@ -1,24 +1,26 @@
-{
-  "qualification_codes": [
-    "Q1",
-    "Q2"
-  ],
-  "staff_codes": [
-    "S1",
-    "S2"
-  ],
-  "depot_codes": [
-    "D1",
-    "D2"
-  ],
-  "business_unit_codes": [
-    "BU1",
-    "BU2"
-  ],
-  "working_group_codes": [
-    "WG1",
-    "WG2"
-  ],
-  "startDate": "2025-01-01",
-  "endDate": "2025-12-31"
-}
+[
+  {
+    "qualification_codes": [
+      "Q1",
+      "Q2"
+    ],
+    "staff_codes": [
+      "S1",
+      "S2"
+    ],
+    "depot_codes": [
+      "D1",
+      "D2"
+    ],
+    "business_unit_codes": [
+      "BU1",
+      "BU2"
+    ],
+    "working_group_codes": [
+      "WG1",
+      "WG2"
+    ],
+    "startDate": "2025-01-01",
+    "endDate": "2025-12-31"
+  }
+]
