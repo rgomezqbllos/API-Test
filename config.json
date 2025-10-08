@@ -1,16 +1,4 @@
 {
-  "globals": {
-    "baseUrl": "https://api-test.otto.goalsystems.es/api-integration",
-    "tenant_id": "314",
-    "auth": {
-      "identity_base_url": "https://identity-test.otto.goalsystems.es",
-      "realm": "goalsystems",
-      "grant_type": "password",
-      "username": "user.consultant@otto.com",
-      "password": "admin",
-      "client_id": "manager-web"
-    }
-  },
   "queries": [
     {
       "name": "Get Staff Assignment",
@@ -18,7 +6,7 @@
       "path": "/ext/v1/staff/assignment",
       "params": {
         "startDate": "2025-01-01",
-        "endDate": "2026-01-01"
+        "endDate": "2025-12-31"
       },
       "outputFile": "staff_assignment.json"
     },
@@ -28,7 +16,7 @@
       "path": "/ext/v1/task",
       "params": {
         "startDate": "2025-01-01",
-        "endDate": "2026-01-01"
+        "endDate": "2025-12-31"
       },
       "outputFile": "task.json"
     },
@@ -36,18 +24,23 @@
       "name": "Get Business Unit",
       "method": "GET",
       "path": "/ext/v1/businessUnit",
-      "params": {},
+      "params": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31"
+      },
       "outputFile": "businessUnit.json"
     },
     {
-      "name": "Get Scenario Metrics",
+      "name": "Get Staff Detail",
       "method": "GET",
-      "path": "/ext/v1/schedulingScenarios/{scenarioCode}/metrics",
-      "pathParams": {
-        "scenarioCode": "120"
+      "path": "/ext/v1/staff/detail",
+      "params": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31",
+        "limit": "20",
+        "offset": "0"
       },
-      "params": {},
-      "outputFile": "scenario_metrics.json"
+      "outputFile": "staff_detail.json"
     }
   ]
 }

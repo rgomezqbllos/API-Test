@@ -21,6 +21,13 @@ Los secretos proporcionados ya vienen cargados para que la herramienta funcione 
 
 `index.js` detecta el modo de autenticacion (password o client_credentials), obtiene el token y añade la cabecera `X-TENANT-ID` automaticamente.
 
+## Configuración de queries
+- `config.json` contiene únicamente el arreglo `queries`; cada entrada define `name`, `method`, `path`, parámetros (`params`), parámetros de ruta (`pathParams`) y el archivo JSON que se generará en `output/`.
+- Los detalles de conexión por ambiente (URLs, realms, tenants, secretos) viven en `config/targets.json`, por lo que cambiar de entorno no requiere modificar `config.json`.
+- Los parámetros de consulta del JSON se aplican tal cual al ejecutar `node index.js`. Si también quieres que Newman use esos valores, replica los cambios en `data.json` o elimina las claves allí para que prevalezcan las definidas en la colección.
+- Puedes añadir o ajustar queries sin reiniciar nada: guarda el archivo y vuelve a ejecutar `run.bat` o `run.sh` con el ambiente y tenant deseados.
+- Si un endpoint responde con error, el detalle queda guardado como `output/error_<archivo>.json` para que puedas corregir rápidamente los parámetros.
+
 ## Requisitos
 - Node.js 18 o superior
 - npm (se instala junto con Node.js)
