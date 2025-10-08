@@ -8,7 +8,18 @@
         "startDate": "2025-01-01",
         "endDate": "2025-12-31"
       },
-      "outputFile": "staff_assignment.json"
+      "outputFile": "staff_assignment.json",
+      "pagination": {
+        "mode": "page",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "pageSize": 200,
+        "startPage": 0,
+        "resultPath": "data",
+        "totalRecordsPath": "totalRecords",
+        "totalPagesPath": "totalPages",
+        "currentPagePath": "currentPage"
+      }
     },
     {
       "name": "Get Task",
@@ -18,7 +29,18 @@
         "startDate": "2025-01-01",
         "endDate": "2025-12-31"
       },
-      "outputFile": "task.json"
+      "outputFile": "task.json",
+      "pagination": {
+        "mode": "page",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "pageSize": 200,
+        "startPage": 0,
+        "resultPath": "data",
+        "totalRecordsPath": "totalRecords",
+        "totalPagesPath": "totalPages",
+        "currentPagePath": "currentPage"
+      }
     },
     {
       "name": "Get Business Unit",
@@ -28,7 +50,18 @@
         "startDate": "2025-01-01",
         "endDate": "2025-12-31"
       },
-      "outputFile": "businessUnit.json"
+      "outputFile": "businessUnit.json",
+      "pagination": {
+        "mode": "page",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "pageSize": 200,
+        "startPage": 0,
+        "resultPath": "data",
+        "totalRecordsPath": "totalRecords",
+        "totalPagesPath": "totalPages",
+        "currentPagePath": "currentPage"
+      }
     },
     {
       "name": "Get Staff Detail",
@@ -36,11 +69,41 @@
       "path": "/ext/v1/staff/detail",
       "params": {
         "startDate": "2025-01-01",
-        "endDate": "2025-12-31",
-        "limit": "20",
-        "offset": "0"
+        "endDate": "2025-12-31"
       },
-      "outputFile": "staff_detail.json"
+      "outputFile": "staff_detail.json",
+      "pagination": {
+        "mode": "page",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "pageSize": 20,
+        "startPage": 0,
+        "resultPath": "data",
+        "totalRecordsPath": "totalRecords",
+        "totalPagesPath": "totalPages",
+        "currentPagePath": "currentPage"
+      }
+    },
+    {
+      "name": "Get Depots",
+      "method": "GET",
+      "path": "/ext/v1/depot",
+      "params": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-12-31"
+      },
+      "outputFile": "Depots.json",
+      "pagination": {
+        "mode": "page",
+        "pageParam": "page",
+        "pageSizeParam": "pageSize",
+        "pageSize": 200,
+        "startPage": 0,
+        "resultPath": "data",
+        "totalRecordsPath": "totalRecords",
+        "totalPagesPath": "totalPages",
+        "currentPagePath": "currentPage"
+      }
     }
   ]
 }

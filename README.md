@@ -26,7 +26,9 @@ Los secretos proporcionados ya vienen cargados para que la herramienta funcione 
 - Los detalles de conexión por ambiente (URLs, realms, tenants, secretos) viven en `config/targets.json`, por lo que cambiar de entorno no requiere modificar `config.json`.
 - Los parámetros de consulta del JSON se aplican tal cual al ejecutar `node index.js`. Si también quieres que Newman use esos valores, replica los cambios en `data.json` o elimina las claves allí para que prevalezcan las definidas en la colección.
 - Puedes añadir o ajustar queries sin reiniciar nada: guarda el archivo y vuelve a ejecutar `run.bat` o `run.sh` con el ambiente y tenant deseados.
+- Para endpoints paginados puedes añadir la clave `pagination` en cada entrada (modo `page` o `offset`), indicando los nombres de los parámetros (`page`, `pageSize`, `offset`, `limit`, etc.). El script recorrerá todas las páginas hasta agotar los datos actualizando los totales finales.
 - Si un endpoint responde con error, el detalle queda guardado como `output/error_<archivo>.json` para que puedas corregir rápidamente los parámetros.
+- Puedes limitar la ejecución a consultas concretas con `--query "Get Staff Detail,Get Task"` (usa el nombre exacto separado por comas). Esto es útil para reprocesar un único JSON sin relanzar colecciones completas.
 
 ## Requisitos
 - Node.js 18 o superior
