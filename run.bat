@@ -9,7 +9,11 @@ call :require_command npm "npm" || exit /b 1
 call :ensure_dependencies || exit /b 1
 
 call :run_step "Ejecutando script de descarga"
-node index.js || goto :error
+if "%~1"=="" (
+  node index.js || goto :error
+) else (
+  node index.js %* || goto :error
+)
 call :run_step "Descarga completada"
 
 call :run_step "Normalizando colección"
@@ -17,7 +21,11 @@ call npm run normalize:collection || goto :error
 
 call :run_step "Ejecutando pruebas de newman"
 if not exist reports mkdir reports
-call npm run test:newman || goto :error
+if "%~1"=="" (
+  call npm run test:newman || goto :error
+) else (
+  call npm run test:newman -- %* || goto :error
+)
 
 if exist newman (
   call "%~dp0move_reports.bat"

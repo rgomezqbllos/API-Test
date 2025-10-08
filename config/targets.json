@@ -1,0 +1,60 @@
+{
+  "environments": {
+    "test": {
+      "description": "Current TEST defaults (password grant)",
+      "api_base_url": "https://api-test.otto.goalsystems.es/api-integration",
+      "identity_base_url": "https://identity-test.otto.goalsystems.es",
+      "auth_mode": "password",
+      "realm": "goalsystems",
+      "client_id": "manager-web",
+      "username": "user.consultant@otto.com",
+      "password_env": "AUTH_PASSWORD",
+      "default_tenant_id": "314"
+    },
+    "pre": {
+      "description": "PRE environment (API PRE OTTO)",
+      "api_base_url": "https://api-pre.otto.goalsystems.es/api-integration",
+      "identity_base_url": "https://identity-pre.otto.goalsystems.es",
+      "auth_mode": "client_credentials",
+      "default_tenant_id": "77",
+      "tenants": {
+        "77": {
+          "label": "Metrorrey Test 10",
+          "realm": "metrorreytest10",
+          "client_id": "external-client",
+          "client_secret_env": "KC_SECRET_T77_PRE",
+          "client_secret": "XEz8KuMnVZR5PLZbiBKccj2VsZXgDdQK"
+        },
+        "76": {
+          "label": "Metrorrey Test 9",
+          "realm": "metrorreytest9",
+          "client_id": "external-client",
+          "client_secret_env": "KC_SECRET_T76_PRE",
+          "client_secret": "zYY9WOhfvB3dhGfvT0W63sbEDIZt1xEQ"
+        }
+      }
+    },
+    "pro": {
+      "description": "PRO environment (GoalBus)",
+      "api_base_url": "https://api.goalbus.goalsystems.com/api-integration",
+      "auth_mode": "client_credentials",
+      "default_tenant_id": "53",
+      "tenants": {
+        "76": {
+          "label": "Metrorrey Test 9 (PRO)",
+          "realm": "metrorreytest9",
+          "identity_base_url": "https://identity-pre.otto.goalsystems.es",
+          "client_id": "external-client",
+          "client_secret": "zYY9WOhfvB3dhGfvT0W63sbEDIZt1xEQ"
+        },
+        "53": {
+          "label": "Metrorrey Ops PRO",
+          "realm": "metrorrey_ops_pro",
+          "identity_base_url": "https://identity.goalbus.goalsystems.com",
+          "client_id": "external-client",
+          "client_secret": "clMiEaAMHCTRFAlMaS6lYz1O4ZxJiNlQ"
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,8 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+SCRIPT_ARGS=("$@")
+
 run_step() {
   local message=$1
   echo "=============================="
@@ -61,7 +63,7 @@ require_command npm "npm"
 ensure_dependencies
 
 run_step "Ejecutando script de descarga"
-node index.js
+node index.js "${SCRIPT_ARGS[@]}"
 run_step "Descarga completada"
 
 run_step "Normalizando colección"
@@ -69,7 +71,11 @@ npm run normalize:collection
 
 run_step "Ejecutando pruebas de newman"
 mkdir -p reports
-npm run test:newman
+if (( ${#SCRIPT_ARGS[@]} )); then
+  npm run test:newman -- "${SCRIPT_ARGS[@]}"
+else
+  npm run test:newman
+fi
 
 if [[ -d newman ]]; then
   run_step "Contenido del directorio newman"

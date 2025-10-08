@@ -8,7 +8,7 @@
     "start": "node index.js",
     "test:report": "npm run normalize:collection && npm run test:newman",
     "normalize:collection": "node scripts/normalize-collection.cjs",
-    "test:newman": "newman run collections/Integration-consumer.postman_collection.normalized.json -e envs/Dev.postman_environment.json --iteration-data data.json --reporters cli,htmlextra,json --delay-request 50"
+    "test:newman": "node scripts/run-newman.js"
   },
   "keywords": [],
   "author": "",

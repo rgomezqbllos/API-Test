@@ -2,6 +2,25 @@
 
 Este proyecto ejecuta consultas contra la API de Metrorrey y después corre una batería de pruebas automatizadas con Newman.
 
+## Seleccion de entorno y tenant (multi-entorno)
+- Los entornos TEST, PRE y PRO ya estan definidos en `config/targets.json` con la informacion suministrada (incluye client_credentials).
+- Si ejecutas los scripts sin parametros se abrira un breve menu interactivo para elegir ambiente y tenant; el ultimo valor usado queda guardado en `config/runtime.cache.json`.
+- Para forzar valores desde la linea de comandos usa `--env` y `--tenant`, o define las variables `API_TEST_ENV` / `API_TEST_TENANT`.
+- Puedes sobreescribir cualquier secreto mediante variables de entorno; por ejemplo `KC_SECRET_T77_PRE` tiene prioridad sobre el valor incluido en el JSON.
+
+### Paso 1: secretos opcionales
+Los secretos proporcionados ya vienen cargados para que la herramienta funcione al instante. Si prefieres gestionarlos fuera del repositorio, crea un `.env` basado en `.env.example` e introduce las variables que quieras mantener privadas:
+- `KC_SECRET_T77_PRE`, `KC_SECRET_T76_PRE`
+- `AUTH_PASSWORD` para el flujo password del entorno TEST
+- `API_TEST_ENV` y `API_TEST_TENANT` para fijar defaults locales
+
+### Paso 2: escoger target al ejecutar
+- `./run.sh --env pre --tenant 77` o `run.bat --env pre --tenant 77`
+- `npm start -- --env pro --tenant 53`
+- Si ejecutas `./run.sh` o `node index.js` sin argumentos, se mostrara un selector interactivo.
+
+`index.js` detecta el modo de autenticacion (password o client_credentials), obtiene el token y añade la cabecera `X-TENANT-ID` automaticamente.
+
 ## Requisitos
 - Node.js 18 o superior
 - npm (se instala junto con Node.js)
@@ -39,11 +58,32 @@ Los reportes finales se encuentran en `reports/` y los datos crudos en `output/`
 - Durante la normalización se inyecta un pre-request a nivel colección que:
   - Sigue ejecutando `pm.collectionVariables.set('dataFile', JSON.stringify(pm.iterationData.toObject()))` (comportamiento previo).
   - Sobrescribe parámetros de query y variables de ruta con los valores definidos por el usuario.
-  - Añade/actualiza automáticamente la cabecera X-TENANT-ID usando 	enant_id (o 	enant_id_override).
-  - Gestiona el token de Keycloak: reutiliza ccess_token si sigue vigente o solicita uno nuevo con las variables de entorno (identity_base_url, 
-ealm, client_id, credenciales...).
+  - Añade/actualiza automáticamente la cabecera `X-TENANT-ID` usando `tenant_id` (o `tenant_id_override`).
+  - Gestiona el token de Keycloak: reutiliza `access_token` si sigue vigente o solicita uno nuevo con las variables de entorno (`identity_base_url`, `realm`, `client_id`, credenciales...).
   - Precedencia estricta: **iteration-data (`data.json`) > environment (`envs/*.json`) > variables de colección > contrato Postman**. Si ninguna fuente aporta un valor, se mantiene el valor del contrato.
   - Solo se consideran las claves con coincidencia exacta (sensible a mayúsculas/minúsculas). No hay conversión automática entre `snake_case`, `camelCase` ni variantes.
+
+### Autenticación con `client_credentials`
+Algunos entornos no usan usuario/contraseña, sino el flujo `client_credentials` de Keycloak. Para ello necesitas únicamente:
+
+1. La URL del endpoint de token de tu realm (`.../protocol/openid-connect/token`).
+2. El `client_id` y su `client_secret`.
+3. El `X-Tenant-Id` que corresponde al entorno que vas a probar.
+
+Con esos datos el script (tanto `index.js` como la colección normalizada) enviará una petición `application/x-www-form-urlencoded` con `grant_type=client_credentials` y añadirá el `client_secret`. En Keycloak es habitual incluirlo mediante la cabecera `Authorization: Basic base64(client_id:client_secret)`, que es lo que hace el pre-request de Newman; el script de Node lee el secreto desde variables de entorno para no guardarlo en Git y construye el mismo encabezado.
+
+> **Importante:** mantén el `client_secret` fuera del repositorio y cárgalo como variable de entorno (por ejemplo `CLIENT_SECRET` antes de ejecutar `run.sh` o `run.bat`). El JSON de configuración (`config.json`) y los environments de Postman/Newman (`envs/`) solo deberían referenciar el nombre de la variable.
+
+Si recibiste credenciales como las siguientes:
+
+```
+URL token: https://identity-pre.otto.goalsystems.es/realms/metrorreytest10/protocol/openid-connect/token
+client_id: external-client
+client_secret: a#WJlb_O<xbM^cByOaATy@-u&v&+_}jI(-Nm89.^gCULG}x%
+X-Tenant-Id: 77
+```
+
+puedes crear un environment específico (por ejemplo `envs/Metrorrey77.postman_environment.json`) con `grant_type` ajustado a `client_credentials`, indicar el `client_id` y dejar el `client_secret` como `{{CLIENT_SECRET}}`. Antes de ejecutar Newman o los scripts, exporta la variable `CLIENT_SECRET` en tu terminal y obtendrás el token sin necesidad de usuario/contraseña.
 
 ### Configuración rápida por parte del usuario
 1. **`data.json`**: debe ser un arreglo de objetos (Newman itera uno a uno). Cada objeto puede incluir las claves con el nombre exacto que usa el endpoint (por ejemplo `startDate`, `endDate`, `limit`, etc.).

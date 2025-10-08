@@ -1,4 +1,15 @@
-node_modules
-output
-reports
-newman
+# Node
+node_modules/
+npm-debug.log*
+
+# Reports / outputs
+newman/
+reports/
+output/
+
+# Environment files
+.env
+envs/Active*.postman_environment.json
+
+# Runtime cache
+config/runtime.cache.json
