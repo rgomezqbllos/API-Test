@@ -135,6 +135,43 @@ function ensureArrayAtPath(obj, pathExpression) {
     return null;
 }
 
+function mergeArrayByKey(target, source, arrayPath, keyPath) {
+    const targetArray = ensureArrayAtPath(target, arrayPath);
+    const sourceArray = getValueAtPath(source, arrayPath);
+    if (!Array.isArray(targetArray) || !Array.isArray(sourceArray)) {
+        return;
+    }
+
+    const seenKeys = new Set(
+        targetArray.map((entry) => {
+            if (!keyPath) {
+                return JSON.stringify(entry);
+            }
+            const keyValue = getValueAtPath(entry, keyPath);
+            return keyValue === undefined ? JSON.stringify(entry) : `key:${String(keyValue)}`;
+        })
+    );
+
+    sourceArray.forEach((entry) => {
+        const identifier = keyPath ? getValueAtPath(entry, keyPath) : null;
+        const key = identifier === undefined || identifier === null
+            ? JSON.stringify(entry)
+            : `key:${String(identifier)}`;
+        if (seenKeys.has(key)) {
+            return;
+        }
+        targetArray.push(cloneDeep(entry));
+        seenKeys.add(key);
+    });
+}
+
+function applyMergeStrategy(existing, incoming, mergeConfig = {}) {
+    const type = (mergeConfig.type || 'arrayByKey').toLowerCase();
+    if (type === 'arraybykey' || type === 'array-by-key') {
+        mergeArrayByKey(existing, incoming, mergeConfig.arrayPath, mergeConfig.key);
+    }
+}
+
 function setValueAtPath(obj, pathExpression, value) {
     if (!pathExpression) return;
     const segments = getPathSegments(pathExpression);
@@ -197,25 +234,88 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
     const mode = (pagination.mode || 'page').toLowerCase();
     const resultPath = pagination.resultPath || DEFAULT_RESULT_PATH;
     const arraySegments = getPathSegments(resultPath);
+    const uniqueConfig = pagination.uniqueBy || pagination.uniqueKey || null;
+    const uniquePaths = Array.isArray(uniqueConfig)
+        ? uniqueConfig
+        : uniqueConfig
+            ? [uniqueConfig]
+            : null;
+    const mergeConfig = pagination.merge || null;
     const maxIterations = computeMaxIterations(pagination);
+    const stopWhenNoNew = pagination.stopWhenNoNew !== false;
+    const noNewThreshold = normalizeNumber(pagination.noNewThreshold, 1) || 1;
 
     const baseParams = { ...(query.params || {}) };
-    let aggregatedData = null;
-    let aggregatedArray = null;
+    const aggregate = {
+        payload: null,
+        arrayRef: null,
+        seen: new Map(),
+        totalItems: 0,
+        duplicates: 0,
+        pages: 0
+    };
 
-    const collectPage = (responseData) => {
-        const pageItems = arraySegments ? getValueAtPath(responseData, resultPath) : responseData;
-        const pageArray = Array.isArray(pageItems) ? pageItems : [];
-        if (!aggregatedData) {
-            aggregatedData = cloneDeep(responseData);
-            aggregatedArray = ensureArrayAtPath(aggregatedData, resultPath);
-            if (!aggregatedArray) {
+    const makeFallbackKey = (item) => `json:${JSON.stringify(item)}`;
+
+    const makeKey = (item) => {
+        if (uniquePaths && uniquePaths.length) {
+            const parts = [];
+            for (const pathRef of uniquePaths) {
+                if (pathRef === '__self__' || pathRef === '__full__') {
+                    parts.push(JSON.stringify(item));
+                    continue;
+                }
+                const value = getValueAtPath(item, pathRef);
+                if (value === undefined || value === null) {
+                    return makeFallbackKey(item);
+                }
+                parts.push(typeof value === 'string' ? value : JSON.stringify(value));
+            }
+            return `key:${parts.join('|')}`;
+        }
+        return makeFallbackKey(item);
+    };
+
+    const ensureAggregate = (responseData) => {
+        if (!aggregate.payload) {
+            aggregate.payload = cloneDeep(responseData);
+            aggregate.arrayRef = ensureArrayAtPath(aggregate.payload, resultPath);
+            if (!aggregate.arrayRef) {
                 throw new Error(`El resultado de la consulta "${query.name}" no contiene un arreglo en la ruta "${resultPath}".`);
             }
-        } else if (pageArray.length) {
-            aggregatedArray.push(...pageArray.map((item) => cloneDeep(item)));
+            aggregate.arrayRef.length = 0;
         }
-        return pageArray.length;
+    };
+
+    const addItem = (item) => {
+        const key = makeKey(item);
+        const existing = aggregate.seen.get(key);
+        if (!existing) {
+            const clone = cloneDeep(item);
+            aggregate.arrayRef.push(clone);
+            aggregate.seen.set(key, clone);
+            aggregate.totalItems += 1;
+            return 1;
+        }
+        if (mergeConfig) {
+            applyMergeStrategy(existing, item, mergeConfig);
+        }
+        aggregate.duplicates += 1;
+        return 0;
+    };
+
+    const collectPage = (responseData) => {
+        ensureAggregate(responseData);
+        const pageItems = arraySegments ? getValueAtPath(responseData, resultPath) : responseData;
+        const pageArray = Array.isArray(pageItems) ? pageItems : [];
+        let added = 0;
+        pageArray.forEach((item) => {
+            added += addItem(item);
+        });
+        return {
+            fetched: pageArray.length,
+            added
+        };
     };
 
     if (mode === 'page') {
@@ -228,6 +328,7 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
 
         let currentPage = startPage;
         let iterations = 0;
+        let noNewStreak = 0;
 
         while (iterations < maxIterations) {
             const responseData = await performRequest(query, baseUrl, tenantId, authConfig, {
@@ -236,21 +337,37 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
                 [pageSizeParam]: pageSize
             });
 
-            const fetchedItems = collectPage(responseData);
+            const { fetched, added } = collectPage(responseData);
+            aggregate.pages += 1;
             iterations += 1;
 
             const totalPages = getValueAtPath(responseData, pagination.totalPagesPath || 'totalPages');
             const currentReturnedPage = getValueAtPath(responseData, pagination.currentPagePath || 'currentPage');
 
             let shouldContinue = true;
-            if (fetchedItems === 0) {
+            if (fetched === 0) {
                 shouldContinue = false;
             } else if (typeof totalPages === 'number') {
                 const nextPage = typeof currentReturnedPage === 'number' ? currentReturnedPage + 1 : currentPage + 1;
                 if (nextPage >= totalPages) {
                     shouldContinue = false;
                 }
-            } else if (fetchedItems < pageSize) {
+            } else if (fetched < pageSize) {
+                shouldContinue = false;
+            }
+
+            if (pagination.maxRecords && aggregate.totalItems >= pagination.maxRecords) {
+                aggregate.arrayRef.length = pagination.maxRecords;
+                shouldContinue = false;
+            }
+
+            if (added === 0) {
+                noNewStreak += 1;
+            } else {
+                noNewStreak = 0;
+            }
+
+            if (stopWhenNoNew && noNewStreak >= noNewThreshold) {
                 shouldContinue = false;
             }
 
@@ -261,20 +378,28 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
             currentPage += 1;
         }
 
-        if (aggregatedArray && pagination.updateTotals !== false) {
-            if (pagination.totalRecordsPath || 'totalRecords') {
-                setValueAtPath(aggregatedData, pagination.totalRecordsPath || 'totalRecords', aggregatedArray.length);
-            }
-            if (pagination.totalPagesPath || 'totalPages') {
-                const computedPages = pageSize > 0 ? Math.ceil(aggregatedArray.length / pageSize) : aggregatedArray.length;
-                setValueAtPath(aggregatedData, pagination.totalPagesPath || 'totalPages', computedPages);
-            }
-            if (pagination.currentPagePath || 'currentPage') {
-                setValueAtPath(aggregatedData, pagination.currentPagePath || 'currentPage', startPage);
-            }
+        if (!aggregate.payload) {
+            const fallback = {};
+            setValueAtPath(fallback, resultPath, []);
+            aggregate.payload = fallback;
+            aggregate.arrayRef = ensureArrayAtPath(aggregate.payload, resultPath);
         }
 
-        return aggregatedData;
+        if (aggregate.arrayRef && pagination.updateTotals !== false) {
+            setValueAtPath(aggregate.payload, pagination.totalRecordsPath || 'totalRecords', aggregate.arrayRef.length);
+            const computedPages = pageSize > 0 ? Math.ceil(aggregate.arrayRef.length / pageSize) : aggregate.arrayRef.length;
+            setValueAtPath(aggregate.payload, pagination.totalPagesPath || 'totalPages', computedPages);
+            setValueAtPath(aggregate.payload, pagination.currentPagePath || 'currentPage', startPage);
+        }
+
+        return {
+            payload: aggregate.payload,
+            stats: {
+                pages: aggregate.pages,
+                items: aggregate.arrayRef ? aggregate.arrayRef.length : 0,
+                duplicates: aggregate.duplicates
+            }
+        };
     }
 
     if (mode === 'offset') {
@@ -287,6 +412,7 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
 
         let currentOffset = startOffset;
         let iterations = 0;
+        let noNewStreak = 0;
 
         while (iterations < maxIterations) {
             const responseData = await performRequest(query, baseUrl, tenantId, authConfig, {
@@ -295,44 +421,89 @@ async function fetchWithPagination(query, baseUrl, tenantId, authConfig) {
                 [limitParam]: limit
             });
 
-            const fetchedItems = collectPage(responseData);
+            const { fetched, added } = collectPage(responseData);
+            aggregate.pages += 1;
             iterations += 1;
 
-            if (fetchedItems === 0) {
+            if (fetched === 0) {
                 break;
             }
 
-            if (pagination.maxRecords && aggregatedArray && aggregatedArray.length >= pagination.maxRecords) {
-                aggregatedArray.length = pagination.maxRecords;
+            if (pagination.maxRecords && aggregate.arrayRef && aggregate.arrayRef.length >= pagination.maxRecords) {
+                aggregate.arrayRef.length = pagination.maxRecords;
                 break;
             }
 
-            if (fetchedItems < limit) {
+            if (fetched < limit) {
+                break;
+            }
+
+            if (added === 0) {
+                noNewStreak += 1;
+            } else {
+                noNewStreak = 0;
+            }
+
+            if (stopWhenNoNew && noNewStreak >= noNewThreshold) {
                 break;
             }
 
             currentOffset += limit;
         }
 
-        if (aggregatedArray && pagination.updateTotals !== false) {
-            setValueAtPath(aggregatedData, pagination.totalRecordsPath || 'totalRecords', aggregatedArray.length);
+        if (!aggregate.payload) {
+            const fallback = {};
+            setValueAtPath(fallback, resultPath, []);
+            aggregate.payload = fallback;
+            aggregate.arrayRef = ensureArrayAtPath(aggregate.payload, resultPath);
         }
 
-        return aggregatedData;
+        if (aggregate.arrayRef && pagination.updateTotals !== false) {
+            setValueAtPath(aggregate.payload, pagination.totalRecordsPath || 'totalRecords', aggregate.arrayRef.length);
+        }
+
+        return {
+            payload: aggregate.payload,
+            stats: {
+                pages: aggregate.pages,
+                items: aggregate.arrayRef ? aggregate.arrayRef.length : 0,
+                duplicates: aggregate.duplicates
+            }
+        };
     }
 
-    throw new Error(`Modo de paginación no soportado "${pagination.mode}" para la consulta "${query.name}".`);
+    throw new Error(`Modo de paginacion no soportado "${pagination.mode}" para la consulta "${query.name}".`);
 }
 
 async function executeSingleQuery(query, baseUrl, tenantId, authConfig) {
     try {
-        const data = query.pagination
-            ? await fetchWithPagination(query, baseUrl, tenantId, authConfig)
-            : await performRequest(query, baseUrl, tenantId, authConfig, {});
+        let result;
+        if (query.pagination) {
+            result = await fetchWithPagination(query, baseUrl, tenantId, authConfig);
+        } else {
+            const payload = await performRequest(query, baseUrl, tenantId, authConfig, {});
+            const defaultArray = getValueAtPath(payload, DEFAULT_RESULT_PATH);
+            result = {
+                payload,
+                stats: {
+                    pages: 1,
+                    items: Array.isArray(defaultArray) ? defaultArray.length : null,
+                    duplicates: 0
+                }
+            };
+        }
 
         const outputFilePath = path.join(OUTPUT_DIR, query.outputFile);
-        await fs.writeFile(outputFilePath, JSON.stringify(data, null, 2));
-        console.log(`Successfully saved response to ${outputFilePath}`);
+        await fs.writeFile(outputFilePath, JSON.stringify(result.payload, null, 2));
+
+        const itemsInfo = result.stats.items !== null && result.stats.items !== undefined
+            ? `${result.stats.items} registro(s)`
+            : 'registros n/d';
+        const pagesInfo = result.stats.pages ? `${result.stats.pages} pagina(s)` : '1 pagina';
+        const duplicatesInfo = result.stats.duplicates
+            ? `, ${result.stats.duplicates} duplicado(s) descartado(s)`
+            : '';
+        console.log(`Successfully saved response to ${outputFilePath} (${itemsInfo}, ${pagesInfo}${duplicatesInfo})`);
     } catch (error) {
         const statusMsg = error.response ? `${error.response.status} ${error.response.statusText}` : error.message;
         console.error(`Error executing query "${query.name}":`, statusMsg);
@@ -414,6 +585,11 @@ async function executeQueries() {
             if (missing.length) {
                 console.warn(`No se encontraron las consultas solicitadas: ${missing.join(', ')}`);
             }
+        }
+
+        if (!queriesToRun.length) {
+            console.warn('No hay consultas para ejecutar con los parametros proporcionados.');
+            return;
         }
 
         await saveRuntimeCache(runtime);

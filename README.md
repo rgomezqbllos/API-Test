@@ -29,6 +29,7 @@ Los secretos proporcionados ya vienen cargados para que la herramienta funcione 
 - Para endpoints paginados puedes añadir la clave `pagination` en cada entrada (modo `page` o `offset`), indicando los nombres de los parámetros (`page`, `pageSize`, `offset`, `limit`, etc.). El script recorrerá todas las páginas hasta agotar los datos actualizando los totales finales.
 - Si un endpoint responde con error, el detalle queda guardado como `output/error_<archivo>.json` para que puedas corregir rápidamente los parámetros.
 - Puedes limitar la ejecución a consultas concretas con `--query "Get Staff Detail,Get Task"` (usa el nombre exacto separado por comas). Esto es útil para reprocesar un único JSON sin relanzar colecciones completas.
+- Para acotar el rango temporal ajusta `startDate` / `endDate` en la entrada correspondiente de `config.json`; el script respeta esos valores al momento de descargar los datos.
 
 ## Requisitos
 - Node.js 18 o superior
